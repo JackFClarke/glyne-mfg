@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 export default function IndustriesPage() {
   return (
-    <div className="container py-12">
+    <div className="py-12">
       <h1 className="text-4xl font-bold mb-8">Industries We Serve</h1>
       
       <p className="text-lg mb-12">

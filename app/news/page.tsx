@@ -33,7 +33,7 @@ const newsItems = [
 
 export default function NewsPage() {
   return (
-    <div className="container py-12">
+    <div className=" py-12">
       <h1 className="text-4xl font-bold mb-8">Latest News</h1>
       
       <div className="grid gap-8 md:grid-cols-2 mb-12">

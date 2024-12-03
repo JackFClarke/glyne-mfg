@@ -15,7 +15,7 @@ import {
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b bg-slate-400 backdrop-blur supports-[backdrop-filter]:bg-slate-400/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
           <Sheet>
             <SheetTrigger asChild>
@@ -139,8 +139,50 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <main className="px-4 sm:px-6 lg:px-8 py-8">{children}</main>
-      {/* Footer content remains unchanged */}
+      <main className="px-4 sm:px-6 lg:px-8 py-8 justify-center items-center ">{children}</main>
+      <footer className="border-t">
+      <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        {/* <div className="container py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4"> */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <address className="not-italic text-sm text-muted-foreground">
+              380 East Main Street<br />
+              Stratford, CT 06614<br />
+              Phone: (203) 375-4495<br />
+              Fax: (203) 375-4496<br />
+              Email: info@glynemfg.com
+            </address>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li><Link href="/services/rotary-swaging">Rotary Swaging</Link></li>
+              <li><Link href="/services/end-forming">End Forming</Link></li>
+              <li><Link href="/services/machining">Machining</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Industries</h3>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li><Link href="/industries/aerospace">Aerospace</Link></li>
+              <li><Link href="/industries/commercial">Commercial</Link></li>
+              <li><Link href="/industries/industrial">Industrial</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Hours</h3>
+            <p className="text-sm text-muted-foreground">
+              Monday - Thursday<br />
+              6:30 AM - 5:00 PM
+            </p>
+          </div>
+        </div>
+        <div className="border-t">
+          <div className="mx-auto py-4 text-center text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Glyne Manufacturing Co., Inc. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

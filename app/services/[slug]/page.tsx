@@ -78,7 +78,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="container py-12">
+    <div className="py-12">
       <Button asChild variant="outline" className="mb-6">
         <Link href="/processes">
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to Services
