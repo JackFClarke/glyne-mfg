@@ -40,7 +40,7 @@ export default function IndustriesPage() {
             <h4 className="font-semibold mb-2">Inspection Equipment</h4>
             <ul className="list-disc list-inside mb-4">
               <li>Johnson Company indicating thread gauges</li>
-              <li>Olympus 18" rigid borescope with internal light source</li>
+              <li>Olympus 18&quot; rigid borescope with internal light source</li>
               <li>Olympus ultrasonic wall thickness tester with immersion tank transducer</li>
             </ul>
             <Button asChild>
