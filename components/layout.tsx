@@ -9,8 +9,8 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center">
+      <header className="sticky top-0 z-50 w-full border-b bg-foreground/95 backdrop-blur supports-[backdrop-filter]:bg-foreground/60 justify-center items-center">
+        <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -21,7 +21,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <SheetContent side="left">
               <nav className="flex flex-col gap-4">
                 <Link href="/" className="flex items-center space-x-2">
-                  <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={200} height={50} />
+                  <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={200} height={50} style={{ height: 'auto' }} />
                 </Link>
                 <Link href="/about">About</Link>
                 <Link href="/services/rotary-swaging">Rotary Swaging</Link>
@@ -35,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </Sheet>
           <div className="flex w-full items-center justify-between">
             <Link href="/" className="hidden md:flex">
-              <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={200} height={50} priority />
+              <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={200} height={50} priority style={{ height: 'auto' }} />
             </Link>
             <NavigationMenu className="hidden md:flex">
               <NavigationMenuList>
@@ -114,9 +114,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <main className="px-4 sm:px-6 lg:px-8 py-8">{children}</main>
+      <main className="px-4 sm:px-6 lg:px-8 py-8 flex justify-center items-center">{children}</main>
       <footer className="border-t">
-        <div className="container py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4 items-center">
+        <div className="mx-auto max-w-7xl items-center justify-center py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-sm text-muted-foreground">

@@ -25,7 +25,7 @@ export default function AboutPage() {
         </div>
         <div className="relative h-[400px] rounded-lg overflow-hidden">
           <Image
-            src="/assets/commercial5.jpg"
+            src="/cnn-lathe-for-secondary-operations.jpg"
             alt="Glyne Manufacturing Facility"
             fill
             className="object-cover"

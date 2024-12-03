@@ -19,12 +19,13 @@ export default function IndustriesPage() {
       <div className="grid gap-12 md:grid-cols-2 mb-12">
         <Card>
           <CardHeader>
-            <div className="relative h-64 mb-4">
+            <div className="relative w-full h-64 mb-4">
               <Image
-                src="/assets/aerospace2.jpg"
+                src="/tube-in-lathe-for-machining.jpg"
                 alt="Aerospace Industry"
-                fill
-                className="object-cover rounded-t-lg"
+                layout="fill"
+                objectFit="contain"
+                className="rounded-t-lg"
               />
             </div>
             <CardTitle>Aerospace</CardTitle>
@@ -53,12 +54,13 @@ export default function IndustriesPage() {
 
         <Card>
           <CardHeader>
-            <div className="relative h-64 mb-4">
+            <div className="relative w-full h-64 mb-4">
               <Image
-                src="/assets/commercial5.jpg"
+                src="/swaged-medical-parts.jpg"
                 alt="Commercial/Industrial"
-                fill
-                className="object-cover rounded-t-lg"
+                layout="fill"
+                objectFit="contain"
+                className="rounded-t-lg"
               />
             </div>
             <CardTitle>Commercial/Industrial</CardTitle>
@@ -95,4 +97,3 @@ export default function IndustriesPage() {
     </div>
   )
 }
-

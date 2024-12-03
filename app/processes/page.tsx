@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from 'lucide-react'
 
@@ -19,14 +18,6 @@ export default function ProcessesPage() {
       <div className="grid gap-12 mb-12">
         <Card>
           <CardHeader>
-            <div className="relative h-64 mb-4">
-              <Image
-                src="/assets/rotary-swaged-dies.jpg"
-                alt="Rotary Swaging Process"
-                fill
-                className="object-cover rounded-t-lg"
-              />
-            </div>
             <CardTitle>Rotary Swaging</CardTitle>
             <CardDescription>Precision tube forming with superior surface finish</CardDescription>
           </CardHeader>
@@ -46,14 +37,6 @@ export default function ProcessesPage() {
 
         <Card>
           <CardHeader>
-            <div className="relative h-64 mb-4">
-              <Image
-                src="/assets/endForming4.jpg"
-                alt="End Forming Process"
-                fill
-                className="object-cover rounded-t-lg"
-              />
-            </div>
             <CardTitle>End Forming</CardTitle>
             <CardDescription>Custom end shapes for specific applications</CardDescription>
           </CardHeader>
@@ -73,14 +56,6 @@ export default function ProcessesPage() {
 
         <Card>
           <CardHeader>
-            <div className="relative h-64 mb-4">
-              <Image
-                src="/assets/machining-outside-of-tube.jpg"
-                alt="Machining Process"
-                fill
-                className="object-cover rounded-t-lg"
-              />
-            </div>
             <CardTitle>Machining</CardTitle>
             <CardDescription>Precision CNC machining and threading</CardDescription>
           </CardHeader>
