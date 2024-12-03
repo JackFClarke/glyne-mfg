@@ -12,7 +12,7 @@ export default function ContactPage() {
       <div className="grid gap-12 lg:grid-cols-2">
         <div>
           <p className="text-lg mb-6">
-            We're here to answer any questions you may have about our services. 
+            We&apos;re here to answer any questions you may have about our services. 
             Please feel free to reach out using the contact information below or 
             by filling out the form.
           </p>

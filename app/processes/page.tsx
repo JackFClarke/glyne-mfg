@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export default function ProcessesPage() {
   return (
     <div className="container py-12">
-      <h1 className="text-4xl font-bold mb-8">Our Processes & Solutions</h1>
+      <h1 className="text-4xl font-bold mb-8">Our Processes &amp; Solutions</h1>
       
       <p className="text-lg mb-12">
         At Glyne Manufacturing, we offer a range of precision manufacturing processes 
@@ -33,8 +33,8 @@ export default function ProcessesPage() {
           <CardContent>
             <p className="mb-4">
               Our rotary swaging process allows for precise reduction and shaping of tubular 
-              components. With 10 swaging machines, we can handle diameters up to 3.00" and 
-              create tapers up to 15" in a single pass.
+              components. With 10 swaging machines, we can handle diameters up to 3.00&quot; and 
+              create tapers up to 15&quot; in a single pass.
             </p>
             <Button asChild>
               <Link href="/processes/rotary-swaging">
@@ -61,7 +61,7 @@ export default function ProcessesPage() {
             <p className="mb-4">
               Our end forming capabilities allow us to create custom end shapes on tubular 
               components. With 3 different endformers, we can work with diameters ranging 
-              from 1/8" to 3.00".
+              from 1/8&quot; to 3.00&quot;.
             </p>
             <Button asChild>
               <Link href="/processes/end-forming">
@@ -109,4 +109,3 @@ export default function ProcessesPage() {
     </div>
   )
 }
-

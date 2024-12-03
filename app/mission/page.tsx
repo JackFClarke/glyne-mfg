@@ -12,7 +12,7 @@ export default function MissionPage() {
         <p className="text-xl mb-6">
           At Glyne Manufacturing, our mission is to deliver efficient manufacturing solutions 
           with a commitment to 100% parts to print and on-time delivery. We strive to exceed 
-          our customers' expectations by providing high-quality, precision-engineered components 
+          our customers&apos; expectations by providing high-quality, precision-engineered components 
           for the aerospace and industrial sectors.
         </p>
       </div>

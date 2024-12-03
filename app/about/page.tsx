@@ -36,12 +36,12 @@ export default function AboutPage() {
       <h2 className="text-3xl font-bold mb-6">Company Profile</h2>
       <div className="bg-muted p-8 rounded-lg mb-12">
         <p className="mb-4">
-          Established in 1966, Glyne's early customers were a variety of commercial, medical, and aircraft suppliers. 
+          Established in 1966, Glyne&apos;s early customers were a variety of commercial, medical, and aircraft suppliers. 
           The company focused heavily on profile tubes for aircraft integrated fuel tank systems, and control rods for push-pull systems.
         </p>
         <p className="mb-4">
-          As Glyne grew into the 1980's and 1990's the company became involved in the growing bicycle industry, 
-          providing all the swaged tubes for a major US manufacturer of high end aluminum frames. By the early 2000's 
+          As Glyne grew into the 1980&apos;s and 1990&apos;s the company became involved in the growing bicycle industry, 
+          providing all the swaged tubes for a major US manufacturer of high end aluminum frames. By the early 2000&apos;s 
           this commercial work began moving to Asia, following an established American trend towards outsourcing.
         </p>
         <p className="mb-4">
@@ -50,7 +50,7 @@ export default function AboutPage() {
           They had begun to focus on assemblies and wanted individual parts complete to print.
         </p>
         <p className="mb-4">
-          This is the path we've been on for the last 10 years, and it has been complemented by our adoption of 
+          This is the path we&apos;ve been on for the last 10 years, and it has been complemented by our adoption of 
           ISO management standards since 2008.
         </p>
         <p className="font-semibold">
@@ -103,4 +103,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
