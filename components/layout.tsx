@@ -116,7 +116,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </header>
       <main className="px-4 sm:px-6 lg:px-8 py-8">{children}</main>
       <footer className="border-t">
-        <div className="container py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center">
+        <div className="container py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4 items-center">
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-sm text-muted-foreground">

@@ -13,7 +13,7 @@ export default function Home() {
           src="/custom-rotary-swaged-tubes.jpg"
           alt="Precision Manufacturing"
           fill
-          className="object-cover brightness-50"
+          className="object-contain brightness-50"
           priority
         />
         <div className="container relative z-10 text-center max-w-7xl mx-auto">
