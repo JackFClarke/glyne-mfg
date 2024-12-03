@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function ContactPage() {
   return (
-    <div className="container py-12">
+    <div className=" py-12">
       <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
       
       <div className="grid gap-12 lg:grid-cols-2">

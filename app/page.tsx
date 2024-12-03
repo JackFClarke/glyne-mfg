@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 bg-muted">
-        <div className="container max-w-7xl mx-auto">
+        <div className=" max-w-7xl mx-auto">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">Quality Manufacturing Since 1966</h2>

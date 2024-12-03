@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
   return (
-    <div className="container py-12">
+    <div className=" py-12">
       <h1 className="text-4xl font-bold mb-8">About Glyne Manufacturing</h1>
       
       <div className="grid gap-12 lg:grid-cols-2 items-center mb-12">

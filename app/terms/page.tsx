@@ -1,7 +1,7 @@
 
 export default function TermsPage() {
   return (
-    <div className="container py-16 px-8 bg-gray-50">
+    <div className=" py-16 px-8 bg-gray-50">
       <h1 className="text-5xl font-extrabold text-center mb-10 text-gray-800">Glyne Terms & Conditions</h1>
       <p className="text-center text-xl mb-12 text-gray-600">Form F840-04 R6</p>
       
