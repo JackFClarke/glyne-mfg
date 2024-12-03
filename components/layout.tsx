@@ -14,7 +14,7 @@ import {
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-background max-w-7xl">
+    <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-slate-400 backdrop-blur supports-[backdrop-filter]:bg-slate-400/60">
         <div className="mx-auto flex items-center justify-between p-6 lg:px-8">
           <Sheet>
