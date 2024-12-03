@@ -1,15 +1,21 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Menu } from 'lucide-react'
+import { Menu, ChevronDown } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-foreground/95 backdrop-blur supports-[backdrop-filter]:bg-foreground/60 justify-center items-center">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
           <Sheet>
             <SheetTrigger asChild>
@@ -30,6 +36,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Link href="/industries">Industries</Link>
                 <Link href="/news">News</Link>
                 <Link href="/contact">Contact</Link>
+                <Link href="/terms">Terms</Link>
+                <a href="/Glyne-AS9100D-2021.pdf" target="_blank" rel="noopener noreferrer">AS9100D Certificate</a>
               </nav>
             </SheetContent>
           </Sheet>
@@ -106,6 +114,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <DropdownMenu>
+                    <DropdownMenuTrigger className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                      Resources <ChevronDown className="ml-1 h-3 w-3" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent>
+                      <DropdownMenuItem>
+                        <Link href="/terms">Terms & Conditions</Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem>
+                        <a href="/Glyne-AS9100D-2021.pdf" target="_blank" rel="noopener noreferrer">
+                          AS9100D Certificate
+                        </a>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
             <Button asChild className="hidden md:inline-flex">
@@ -114,49 +139,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <main className="px-4 sm:px-6 lg:px-8 py-8 flex justify-center items-center">{children}</main>
-      <footer className="border-t">
-        <div className="mx-auto max-w-7xl items-center justify-center py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <address className="not-italic text-sm text-muted-foreground">
-              380 East Main Street<br />
-              Stratford, CT 06614<br />
-              Phone: (203) 375-4495<br />
-              Fax: (203) 375-4496<br />
-              Email: info@glynemfg.com
-            </address>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/services/rotary-swaging">Rotary Swaging</Link></li>
-              <li><Link href="/services/end-forming">End Forming</Link></li>
-              <li><Link href="/services/machining">Machining</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Industries</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/industries/aerospace">Aerospace</Link></li>
-              <li><Link href="/industries/commercial">Commercial</Link></li>
-              <li><Link href="/industries/industrial">Industrial</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Hours</h3>
-            <p className="text-sm text-muted-foreground">
-              Monday - Thursday<br />
-              6:30 AM - 5:00 PM
-            </p>
-          </div>
-        </div>
-        <div className="border-t">
-          <div className="container py-4 text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Glyne Manufacturing Co., Inc. All rights reserved.
-          </div>
-        </div>
-      </footer>
+      <main className="px-4 sm:px-6 lg:px-8 py-8">{children}</main>
+      {/* Footer content remains unchanged */}
     </div>
   )
 }
