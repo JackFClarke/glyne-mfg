@@ -14,9 +14,9 @@ import {
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background max-w-7xl">
       <header className="sticky top-0 z-50 w-full border-b bg-slate-400 backdrop-blur supports-[backdrop-filter]:bg-slate-400/60">
-        <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <div className="mx-auto flex items-center justify-between p-6 lg:px-8">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -139,7 +139,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <main className="max-w-7xl justify-center items-center px-4 sm:px-6 lg:px-8 py-8 ">{children}</main>
+      <main className="justify-center items-center px-4 sm:px-6 lg:px-8 py-8 ">{children}</main>
       <footer className="border-t">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         {/* <div className="container py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4"> */}
