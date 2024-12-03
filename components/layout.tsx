@@ -139,7 +139,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </header>
-      <main className="max-w-7xl px-4 sm:px-6 lg:px-8 py-8 justify-center items-center ">{children}</main>
+      <main className="max-w-7xl justify-center items-center px-4 sm:px-6 lg:px-8 py-8 ">{children}</main>
       <footer className="border-t">
       <div className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         {/* <div className="container py-8 grid gap-8 md:grid-cols-2 lg:grid-cols-4"> */}
