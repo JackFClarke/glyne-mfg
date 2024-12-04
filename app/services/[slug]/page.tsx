@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle2, ArrowLeft } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 // This would typically come from a database or API
@@ -78,90 +78,81 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
   }
 
   return (
-<div className="py-12 px-20 flex flex-col items-start"> {/* Changed items-center to items-start */}
-
-{/* Flex Container for Card and Tabs */}
-<div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full max-w-7xl px-4">
-  
-  {/* Card Container */}
-  <div className="w-full lg:w-2/3 flex justify-center">
-    <Card className="max-w-lg w-full shadow-xl self-stretch"> {/* Added self-stretch */}
-      <CardHeader className="p-0">
-        <div className="relative h-96 w-full overflow-hidden rounded-t-lg">
-          <Image
-            src={service.image}
-            alt={service.title}
-            layout="fill"
-          />
-        </div>
-      </CardHeader>
-      <CardContent className="p-4">
-        <CardTitle className="mb-2">{service.title}</CardTitle>
-        <p className="text-sm text-muted-foreground">{service.content}</p>
-      </CardContent>
-    </Card>
-  </div>
-
-  {/* Tabs Container */}
-  <div className="w-full max-w-lg lg:w-1/3 flex flex-col items-start self-stretch"> {/* Added self-stretch */}
-    <Tabs defaultValue="features" className="w-full">
-      <TabsList className="grid w-full grid-cols-2">
-        <TabsTrigger value="features">Features</TabsTrigger>
-        <TabsTrigger value="applications">Applications</TabsTrigger>
-      </TabsList>
-      <TabsContent value="features">
-        <Card>
-          <CardHeader>
-            <CardTitle>Key Features</CardTitle>
-            <CardDescription>
-              What sets our {service.title.toLowerCase()} process apart
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ul className="grid gap-2">
-              {service.features.map((feature, index) => (
-                <li key={index} className="flex items-center">
-                  <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-      </TabsContent>
-      <TabsContent value="applications">
-        <Card>
-          <CardHeader>
-            <CardTitle>Common Applications</CardTitle>
-            <CardDescription>
-              Industries and products that benefit from our {service.title.toLowerCase()} service
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ul className="grid gap-2">
-              {service.applications.map((application, index) => (
-                <li key={index} className="flex items-center">
-                  <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
-                  {application}
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-      </TabsContent>
-    </Tabs>
-    <div className="mt-8 w-full">
-      <Button asChild size="lg" className="w-full">
-        <Link href="/contact">Request a Quote</Link>
+    <div>
+    <Button asChild variant="outline" className="mb-6">
+        <Link href="/processes">
+          <ArrowLeft className="mr-2 h-4 w-4" /> Back to Services
+        </Link>
       </Button>
+    <div className="flex justify-center py-12 max-w-7xl mx-auto">
+      
+      <div className="grid gap-8 lg:grid-cols-2">
+        <div>
+          <h1 className="text-4xl font-bold mb-4">{service.title}</h1>
+          <p className="text-xl text-muted-foreground mb-6">{service.description}</p>
+          <div className="relative h-[300px] rounded-lg overflow-hidden mb-6">
+            <Image
+              src={service.image}
+              alt={service.title}
+              fill
+             
+            />
+          </div>
+          <div className="prose max-w-none mb-8">
+            <p>{service.content}</p>
+          </div>
+        </div>
+        <div className="flex flex-col h-full justify-center">
+          <Tabs defaultValue="features" className="w-full">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="features">Features</TabsTrigger>
+              <TabsTrigger value="applications">Applications</TabsTrigger>
+            </TabsList>
+            <TabsContent value="features">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Key Features</CardTitle>
+                  <CardDescription>What sets our {service.title.toLowerCase()} process apart</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="grid gap-2">
+                    {service.features.map((feature, index) => (
+                      <li key={index} className="flex items-center">
+                        <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="applications">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Common Applications</CardTitle>
+                  <CardDescription>Industries and products that benefit from our {service.title.toLowerCase()} service</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="grid gap-2">
+                    {service.applications.map((application, index) => (
+                      <li key={index} className="flex items-center">
+                        <CheckCircle2 className="mr-2 h-4 w-4 text-primary" />
+                        {application}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+          <div className="mt-8">
+            <Button asChild size="lg" className="w-full">
+              <Link href="/contact">Request a Quote</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-</div>
-</div>
-
-
-
+    </div>
   )
 }
-

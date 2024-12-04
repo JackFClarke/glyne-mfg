@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Card } from '@/components/ui/card'
 
 export default function ContactPage() {
   return (
@@ -10,7 +11,7 @@ export default function ContactPage() {
       <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
       
       <div className="grid gap-12 lg:grid-cols-2">
-        <div>
+        <div className="flex flex-col h-full">
           <p className="text-lg mb-6">
             We&apos;re here to answer any questions you may have about our services. 
             Please feel free to reach out using the contact information below or 
@@ -47,8 +48,8 @@ export default function ContactPage() {
           </div>
         </div>
         
-        <div>
-          <form className="space-y-6">
+        <Card>
+          <form className="space-y-6 p-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 Name
@@ -77,7 +78,7 @@ export default function ContactPage() {
               Send Message
             </Button>
           </form>
-        </div>
+        </Card>
       </div>
     </div>
   )

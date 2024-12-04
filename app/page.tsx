@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative w-full h-[600px] overflow-hidden">
+      <section className="relative w-full h-[600px] overflow-hidden rounded-lg">
         {/* Embla Carousel */}
         <div className="embla overflow-hidden" ref={emblaRef}>
           <div className="embla__container flex h-[600px]">

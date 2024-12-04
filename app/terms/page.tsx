@@ -1,11 +1,12 @@
+import { Card } from "@/components/ui/card"
 
 export default function TermsPage() {
   return (
-    <div className=" py-16 px-8 bg-gray-50">
+    <div className=" py-16 px-8">
       <h1 className="text-5xl font-extrabold text-center mb-10 text-gray-800">Glyne Terms & Conditions</h1>
       <p className="text-center text-xl mb-12 text-gray-600">Form F840-04 R6</p>
       
-      <div className="prose max-w-none mx-auto bg-white p-16 rounded-lg shadow-lg">
+      <Card className="prose max-w-none mx-auto bg-white p-16 rounded-lg shadow-lg">
         <ol className="list-decimal space-y-6 text-gray-700">
           <li className="leading-relaxed">Glyne Manufacturing, its customers, and authorized government regulatory agencies reserve the right to visit subcontractor&apos;s premises to verify the quality of work being done and maintenance of records.</li>
           <li className="leading-relaxed">Under no circumstances is work to be transferred from your facility to another facility. If there is a process that will not yield conforming results due to either temporary or permanent incapability, Glyne Manufacturing must be notified immediately.</li>
@@ -29,9 +30,7 @@ export default function TermsPage() {
           <li className="leading-relaxed">Suppliers who provide calibration services must be compliant with ISO 17025 and must meet Sikorsky Aircraft&apos;s requirement stated in SSQR-01 for annual eye examinations for individuals performing calibration of M & T resources.</li>
           <li className="leading-relaxed">Please prevent part-to-part contact during handling and processing at your facility. Absent any specific packaging instructions on our purchase order, please pack so parts are not in direct contact with each other, in a box or container with sufficient integrity to prevent damage during return shipment to us.</li>
         </ol>
+      </Card>
       </div>
-      
-      
-    </div>
   )
 }
