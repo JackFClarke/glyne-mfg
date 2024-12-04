@@ -16,7 +16,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="mx-auto flex items-center justify-between p-6 lg:px-8">
+        <div className="mx-auto flex items-center justify-between lg:px-8">
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
@@ -43,7 +43,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </Sheet>
           <div className="flex w-full items-center justify-between">
             <Link href="/" className="hidden md:flex">
-              <span className="text-lg font-bold">GLYNE Manufacturing Co., Inc.</span>
+              <div className="bg-gray-900 overflow-hidden p-8" style={{ clipPath: "ellipse(300px 150px at 0% 50%)" }}>
+                <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={250} height={100} style={{ height: 'auto' }} />
+              </div>
             </Link>
             <NavigationMenu className="hidden md:flex">
               <NavigationMenuList>
