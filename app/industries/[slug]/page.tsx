@@ -36,12 +36,12 @@ export default function IndustryPage({ params }: { params: { slug: string } }) {
   return (
     <div >
       <Button asChild variant="outline" className="mb-6 rounded-lg">
-        <Link href="/industries">
-          <ArrowLeft className="mr-2 h-4 w-4" /> Back to Industries
-        </Link>
-      </Button>
-      <div className="flex justify-center py-12 max-w-7xl mx-auto">
-
+          <Link href="/industries">
+            <ArrowLeft className="mr-2 h-4 w-4" /> Back to Industries
+          </Link>
+        </Button>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        
         <Card className="shadow-lg rounded-lg overflow-hidden border border-gray-200">
           <CardHeader className="bg-white p-6 border-b border-gray-200">
             <CardTitle className="text-2xl font-bold text-gray-800">{industry.title}</CardTitle>
