@@ -33,7 +33,7 @@ const CertificationCard: FC<CertificationCardProps> = ({ title, description }) =
 
 export default function AboutPage() {
   return (
-    <main className="py-12 px-4 max-w-7xl mx-auto">
+    <main className="py-12">
       {/* Page Title */}
       <h1 className="text-4xl font-bold mb-8">About Glyne Manufacturing</h1>
       
