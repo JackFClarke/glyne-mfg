@@ -26,9 +26,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </SheetTrigger>
             <SheetContent side="left">
               <nav className="flex flex-col gap-4">
-                <Link href="/" className="flex items-center space-x-2">
-                  <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={200} height={50} style={{ height: 'auto' }} />
-                </Link>
+                <div className="bg-gray-900">
+                  <Link href="/" className="flex items-center space-x-2">
+                    <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={200} height={50} style={{ height: 'auto' }} />
+                  </Link>
+                </div>
                 <Link href="/about">About</Link>
                 <Link href="/services/rotary-swaging">Rotary Swaging</Link>
                 <Link href="/services/end-forming">End Forming</Link>
