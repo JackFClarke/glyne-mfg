@@ -34,7 +34,7 @@ export default function ContactPage() {
             </div>
           </div>
           
-          <div className="aspect-w-16 aspect-h-9">
+          <div className="aspect-w-16 aspect-h-16">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.1594988639096!2d-73.1261346!3d41.1950748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e80c8b8e3d7beb%3A0x1f57b7f46f4a6c06!2s380%20E%20Main%20St%2C%20Stratford%2C%20CT%2006614!5e0!3m2!1sen!2sus!4v1653394016432!5m2!1sen!2sus" 
               width="100%" 
