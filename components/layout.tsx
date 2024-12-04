@@ -165,8 +165,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <h3 className="text-lg font-semibold mb-4">Industries</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link href="/industries/aerospace">Aerospace</Link></li>
-              <li><Link href="/industries/commercial">Commercial</Link></li>
-              <li><Link href="/industries/industrial">Industrial</Link></li>
+              <li><Link href="/industries/commercial-industrial">Commercial/Industrial</Link></li>
             </ul>
           </div>
           <div>
