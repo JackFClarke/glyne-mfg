@@ -15,7 +15,7 @@ import {
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-slate-400 backdrop-blur supports-[backdrop-filter]:bg-slate-400/60">
+      <header className="sticky top-0 z-50 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="mx-auto flex items-center justify-between p-6 lg:px-8">
           <Sheet>
             <SheetTrigger asChild>
@@ -43,7 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           </Sheet>
           <div className="flex w-full items-center justify-between">
             <Link href="/" className="hidden md:flex">
-              <Image src="/Glyne_logo.png" alt="Glyne Manufacturing" width={200} height={50} priority style={{ height: 'auto' }} />
+              <span className="text-lg font-bold">GLYNE Manufacturing Co., Inc.</span>
             </Link>
             <NavigationMenu className="hidden md:flex">
               <NavigationMenuList>
