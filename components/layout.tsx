@@ -32,6 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   </Link>
                 </div>
                 <Link href="/about">About</Link>
+                <Link href="/mission">Our Mission</Link>
                 <Link href="/services/rotary-swaging">Rotary Swaging</Link>
                 <Link href="/services/end-forming">End Forming</Link>
                 <Link href="/services/machining">Machining</Link>
@@ -108,6 +109,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   <Link href="/about" legacyBehavior passHref>
                     <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                       About
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/mission" legacyBehavior passHref>
+                    <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                      Our Mission
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>

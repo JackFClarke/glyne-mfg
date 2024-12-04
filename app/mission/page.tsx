@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 
 export default function MissionPage() {
   return (
-    <div className="container py-12">
+    <div className="py-12">
       <h1 className="text-4xl font-bold mb-8">Our Mission</h1>
       
       <div className="bg-muted p-8 rounded-lg mb-12">
